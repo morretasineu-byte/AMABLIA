@@ -14,23 +14,23 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-[#1C1917]/60 backdrop-blur-xs transition-opacity"
+        className="fixed inset-0 bg-[#292D32]/65 backdrop-blur-xs transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Modal Card */}
-      <div className="relative bg-[#FAF7F2] border border-[#E0D5C7] rounded-3xl max-w-2xl w-full p-6 sm:p-10 shadow-2xl z-10 max-h-[85vh] overflow-y-auto">
-        <div className="flex items-center justify-between pb-4 border-b border-[#E8DFD5] mb-6">
+      <div className="relative bg-[#F8F5F0] border border-[#DDD1C3] rounded-3xl max-w-2xl w-full p-6 sm:p-10 shadow-2xl z-10 max-h-[85vh] overflow-y-auto">
+        <div className="flex items-center justify-between pb-4 border-b border-[#EDE3D9] mb-6">
           <div className="flex items-center gap-2.5">
-            <ShieldCheck size={20} className="text-[#C89B88]" />
-            <span className="text-xs uppercase tracking-wider text-[#968A7E] font-medium">
+            <ShieldCheck size={20} className="text-[#D4B98C]" />
+            <span className="text-xs uppercase tracking-wider text-[#8C8074] font-semibold">
               Información Legal y Regulatoria
             </span>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-full text-[#7A6F64] hover:text-[#1C1917] hover:bg-[#EFE6DB] transition-colors"
+            className="p-1.5 rounded-full text-[#7A6F64] hover:text-[#292D32] hover:bg-[#EDE3D9] transition-colors cursor-pointer"
             aria-label="Cerrar modal"
           >
             <X size={20} />
@@ -140,10 +140,10 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
           </div>
         )}
 
-        <div className="pt-6 mt-6 border-t border-[#E8DFD5] flex justify-end">
+        <div className="pt-6 mt-6 border-t border-[#EDE3D9] flex justify-end">
           <button
             onClick={onClose}
-            className="px-6 py-2.5 text-xs font-semibold tracking-wide text-[#FAF7F2] bg-[#1C1917] hover:bg-[#2F2A26] rounded-full transition-colors"
+            className="px-6 py-2.5 text-xs font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-colors cursor-pointer"
           >
             Entendido y cerrar
           </button>

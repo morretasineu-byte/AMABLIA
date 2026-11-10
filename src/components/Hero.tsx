@@ -29,19 +29,19 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
           <div className="lg:col-span-7 flex flex-col justify-center">
             
             {/* Clean unboxed kicker with typographic separator */}
-            <div className="flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase text-[#887D73] mb-6 font-medium">
+            <div className="flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase text-[#A39A91] mb-6 font-medium">
               <span>AMABLIA</span>
-              <span className="text-[#C89B88]">·</span>
+              <span className="text-[#D4B98C]">·</span>
               <span>Inteligencia Artificial & Automatización</span>
             </div>
 
-            {/* Main Headline with balanced luxury serif touch */}
-            <h1 className="text-4xl sm:text-5xl xl:text-6xl tracking-tight text-[#1C1917] font-light leading-[1.12] mb-8 max-w-2xl text-balance">
-              La <span className="font-serif-luxury italic font-normal text-[#1C1917]">inteligencia artificial</span> que trabaja para tu negocio.
+            {/* Main Headline with balanced luxury editorial touch */}
+            <h1 className="text-4xl sm:text-5xl xl:text-6xl tracking-tight text-[#292D32] font-light leading-[1.14] mb-8 max-w-2xl text-balance">
+              La <span className="font-serif-editorial italic font-normal text-[#292D32]">inteligencia artificial</span> que trabaja para tu negocio.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-[#6A625B] font-normal leading-relaxed mb-10 max-w-xl">
+            <p className="text-base sm:text-lg text-[#59524A] font-normal leading-relaxed mb-10 max-w-xl">
               Diseñamos sistemas inteligentes que automatizan procesos, mejoran la atención al cliente y ayudan a las empresas a crecer. Tecnología avanzada, pensada para las personas.
             </p>
 
@@ -49,34 +49,34 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <button
                 onClick={onDiscoverClick}
-                className="group inline-flex items-center justify-center gap-3 px-7 py-4 text-sm font-medium tracking-wide text-[#FAF7F2] bg-[#1C1917] hover:bg-[#2C2724] rounded-full transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.99] whitespace-nowrap"
+                className="group inline-flex items-center justify-center gap-3 px-7 py-4 text-sm font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs hover:shadow-md active:scale-[0.99] whitespace-nowrap"
               >
                 <span>Descubre lo que podemos hacer por tu negocio</span>
-                <ArrowDown size={16} className="text-[#E8DFD5] transition-transform duration-200 group-hover:translate-y-0.5" />
+                <ArrowDown size={16} className="text-[#EDE3D9] transition-transform duration-200 group-hover:translate-y-0.5" />
               </button>
 
               <button
                 onClick={onAboutClick}
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-medium tracking-wide text-[#4A423B] bg-transparent hover:bg-[#F2EAE0] border border-[#E0D5C7] rounded-full transition-all duration-200 whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-medium tracking-wide text-[#59524A] bg-transparent hover:bg-[#EDE3D9]/60 border border-[#DDD1C3] rounded-full transition-all duration-200 whitespace-nowrap"
               >
-                <span>Conoce AMABLIA</span>
-                <ArrowUpRight size={15} className="text-[#8C8074]" />
+                <span>Conoce nuestra propuesta</span>
+                <ArrowUpRight size={15} className="text-[#A39A91]" />
               </button>
             </div>
 
             {/* Quiet human-centric philosophy trust note */}
-            <div className="pt-12 mt-10 border-t border-[#EAE2D8]/80 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-[#80756B]">
+            <div className="pt-12 mt-10 border-t border-[#EDE3D9] flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-[#7A7167]">
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C89B88]" />
-                <span>Sensibilidad humana</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D4B98C]" />
+                <span>Atención cercana</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D9BFC0]" />
                 <span>Sistemas a medida</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#968A7D]" />
-                <span>Metodología probada</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#A39A91]" />
+                <span>Acompañamiento continuo</span>
               </div>
             </div>
           </div>

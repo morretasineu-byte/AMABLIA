@@ -20,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   const navLinks = [
     { label: 'Filosofía', href: '#filosofia' },
     { label: 'Soluciones', href: '#soluciones' },
+    { label: 'Ejemplos', href: '#ejemplos' },
     { label: 'Metodología', href: '#metodologia' },
     { label: 'Sectores', href: '#sectores' },
     { label: 'Contacto', href: '#contacto' },
@@ -38,28 +39,28 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#FAF7F2]/92 backdrop-blur-md border-b border-[#E8DFD5]/80 py-3.5 shadow-[0_2px_12px_rgba(28,25,23,0.03)]'
-          : 'bg-[#FAF7F2]/75 backdrop-blur-xs border-b border-transparent py-5'
+          ? 'bg-[#F8F5F0]/95 backdrop-blur-md border-b border-[#EDE3D9]/90 py-3.5 shadow-[0_2px_12px_rgba(41,45,50,0.04)]'
+          : 'bg-[#F8F5F0]/80 backdrop-blur-xs border-b border-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between gap-8">
         {/* Zone 1: Single text element wordmark */}
         <a
           href="#inicio"
-          className="group flex items-baseline gap-1.5 text-[#1C1917] tracking-[0.22em] text-lg font-medium whitespace-nowrap shrink-0 transition-opacity hover:opacity-85"
+          className="group flex items-baseline gap-1.5 text-[#292D32] tracking-[0.2em] text-lg font-medium whitespace-nowrap shrink-0 transition-opacity hover:opacity-85"
         >
-          <span className="font-semibold tracking-[0.24em]">AMABLIA</span>
-          <span className="text-[11px] font-normal tracking-[0.3em] text-[#867B71]">AGENCY</span>
+          <span className="font-semibold tracking-[0.22em]">AMABLIA</span>
+          <span className="text-[11px] font-normal tracking-[0.28em] text-[#A39A91]">AGENCY</span>
         </a>
 
-        {/* Zone 2: 5 clean single-line text navigation links */}
-        <nav className="hidden lg:flex items-center gap-8 text-[13px] tracking-wide text-[#6A625B] font-medium">
+        {/* Zone 2: clean single-line text navigation links */}
+        <nav className="hidden lg:flex items-center gap-7 text-[13px] tracking-wide text-[#59524A] font-medium">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="hover:text-[#1C1917] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#C89B88] hover:after:w-full after:transition-all after:duration-250 whitespace-nowrap shrink-0"
+              className="hover:text-[#292D32] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#D4B98C] hover:after:w-full after:transition-all after:duration-250 whitespace-nowrap shrink-0"
             >
               {link.label}
             </a>
@@ -70,9 +71,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           <button
             onClick={onOpenConsultation}
-            className="px-5 py-2.5 text-xs font-medium tracking-wide text-[#FAF7F2] bg-[#1C1917] hover:bg-[#2F2B28] rounded-full transition-all duration-200 shadow-sm hover:shadow active:scale-[0.99] whitespace-nowrap shrink-0"
+            className="px-5 py-2.5 text-xs font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs hover:shadow active:scale-[0.99] whitespace-nowrap shrink-0"
           >
-            Consultoría Gratuita
+            Solicitar una consultoría gratuita
           </button>
         </div>
 
@@ -106,9 +107,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
                   setMobileMenuOpen(false);
                   onOpenConsultation();
                 }}
-                className="w-full py-3 text-xs tracking-wide font-medium text-[#FAF7F2] bg-[#1C1917] rounded-full text-center"
+                className="w-full py-3 text-xs tracking-wide font-semibold text-[#F8F5F0] bg-[#292D32] rounded-full text-center"
               >
-                Consultoría Gratuita
+                Solicitar una consultoría gratuita
               </button>
             </div>
           </div>

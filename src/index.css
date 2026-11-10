@@ -2,31 +2,30 @@
 
 @layer base {
   :root {
-    --color-ivory: #FAF7F2;
-    --color-cream: #F5EFEB;
-    --color-sand: #EAE2D8;
-    --color-sand-border: #E2D7CB;
-    --color-charcoal: #1C1917;
-    --color-warm-grey: #6A625B;
-    --color-dusty-rose: #C89B88;
-    --color-champagne: #C5A880;
+    --color-anthracite: #292D32;
+    --color-ivory: #F8F5F0;
+    --color-champagne: #D4B98C;
+    --color-sand: #EDE3D9;
+    --color-warm-grey: #A39A91;
+    --color-dusty-rose: #D9BFC0;
   }
 
   body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    background-color: #FAF7F2;
-    color: #1C1917;
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    background-color: #F8F5F0;
+    color: #292D32;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
 }
 
-.font-serif-luxury {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+.font-serif-luxury,
+.font-serif-editorial {
+  font-family: 'Lora', Georgia, serif;
 }
 
 .font-sans-refined {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
 }
 
 /* Custom subtle scrollbar */
