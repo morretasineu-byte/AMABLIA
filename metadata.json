@@ -1,0 +1,6 @@
+{
+  "name": "AMABLIA AGENCY | Inteligencia Artificial y Soluciones Digitales",
+  "description": "Agencia especializada en inteligencia artificial, agentes IA, automatización de procesos y soluciones digitales para empresas. Tecnología avanzada, pensada para las personas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
