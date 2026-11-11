@@ -13,7 +13,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
 
   const navLinks = [
     { label: 'Inicio', href: '#inicio' },
-    { label: 'Filosofía', href: '#filosofia' },
+    { label: 'Filosofía', href: '#filosofia-marca' },
     { label: 'Soluciones', href: '#soluciones' },
     { label: 'Ejemplos Prácticos', href: '#ejemplos' },
     { label: 'Metodología', href: '#metodologia' },
@@ -53,11 +53,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 An AMABLIA AGENCY brand
               </div>
 
-              <p className="text-sm text-[#A39A91] leading-relaxed max-w-sm mb-6">
-                Inteligencia artificial, automatización y soluciones digitales para empresas y clínicas. Tecnología avanzada, pensada para las personas.
+              <p className="text-sm text-[#A39A91] leading-relaxed max-w-sm mb-4">
+                Inteligencia artificial con sensibilidad humana. Porque la tecnología también puede ser amable.
               </p>
               <div className="text-xs text-[#8C8074] leading-relaxed">
-                Diseñamos sistemas que reducen tareas mecánicas, mejoran la atención y potencian el crecimiento comercial sin fricciones.
+                Automatizamos tareas. Humanizamos experiencias. Diseñamos sistemas inteligentes que trabajan para las personas, no en su lugar.
               </div>
             </div>
 

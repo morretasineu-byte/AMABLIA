@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   }, []);
 
   const navLinks = [
-    { label: 'Filosofía', href: '#filosofia' },
+    { label: 'Filosofía', href: '#filosofia-marca' },
     { label: 'Soluciones', href: '#soluciones' },
     { label: 'Ejemplos', href: '#ejemplos' },
     { label: 'Metodología', href: '#metodologia' },

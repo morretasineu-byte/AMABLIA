@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, CheckCircle2, Layers } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
 
 export const Sectors: React.FC = () => {
   const dentaliaFeatures = [
@@ -32,129 +32,84 @@ export const Sectors: React.FC = () => {
           </p>
         </div>
 
-        {/* Brand Architecture Showcase */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
-          
-          {/* Main Showcase: DentalIA Agency */}
-          <div className="lg:col-span-8 p-8 sm:p-12 rounded-3xl bg-[#F3EDE5] border border-[#DDD1C3] shadow-[0_8px_32px_rgba(41,45,50,0.03)] flex flex-col justify-between">
-            <div>
-              {/* Brand hierarchy tag */}
-              <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#E0D4C5] mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#F8F5F0] border border-[#D9CEBF] flex items-center justify-center font-serif-editorial italic text-lg text-[#292D32]">
-                    D
-                  </div>
-                  <div>
-                    <span className="text-[11px] uppercase tracking-[0.2em] text-[#8C8074] font-medium block">
-                      Marca especializada de AMABLIA
-                    </span>
-                    <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#292D32]">
-                      DentalIA Agency
-                    </h3>
-                  </div>
+        {/* Specialized Brand Showcase: DentalIA Agency */}
+        <div className="max-w-5xl mx-auto p-8 sm:p-12 rounded-3xl bg-[#F3EDE5] border border-[#DDD1C3] shadow-[0_8px_32px_rgba(41,45,50,0.03)] flex flex-col justify-between">
+          <div>
+            {/* Brand hierarchy tag */}
+            <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#E0D4C5] mb-8">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-[#F8F5F0] border border-[#D9CEBF] flex items-center justify-center font-serif-editorial italic text-lg text-[#292D32]">
+                  D
                 </div>
-
-                <span className="text-xs font-serif-editorial italic text-[#D4B98C] tracking-wide">
-                  Solución especializada
-                </span>
+                <div>
+                  <span className="text-[11px] uppercase tracking-[0.2em] text-[#8C8074] font-medium block">
+                    Marca especializada de AMABLIA
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#292D32]">
+                    DentalIA Agency
+                  </h3>
+                </div>
               </div>
 
-              {/* Grid with Photography + Capabilities */}
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mb-8">
-                
-                {/* Photo of Modern Clinic Reception & Tech */}
-                <div className="md:col-span-5 rounded-2xl overflow-hidden border border-[#D9CEBF] aspect-[4/3] bg-[#EAE0D4]">
-                  <img
-                    src="/src/assets/images/dentalia_agency_reception_1794314354082.jpg"
-                    alt="Espacio contemporáneo y luminoso de clínica dental con la identidad de DentalIA Agency"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-103"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-
-                {/* Scope Description */}
-                <div className="md:col-span-7">
-                  <h4 className="text-base sm:text-lg font-medium text-[#292D32] mb-2">
-                    Inteligencia artificial y automatización para clínicas dentales.
-                  </h4>
-                  <p className="text-sm text-[#59524A] leading-relaxed mb-4">
-                    Agentes para WhatsApp y telefonía, atención continua de dudas y automatización de avisos pensados para el ritmo de trabajo de una clínica dental.
-                  </p>
-                  <p className="text-xs text-[#7A6F64] leading-relaxed">
-                    Ayuda a aliviar el teléfono de recepción en horas punta, responde fuera de horario y coordina las solicitudes de los pacientes con el equipo de la clínica.
-                  </p>
-                </div>
-
-              </div>
-
-              {/* Bullet Points with prudent medical wording */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10 pt-4 border-t border-[#E0D4C5]">
-                {dentaliaFeatures.map((feat, idx) => (
-                  <div key={idx} className="flex items-start gap-2.5 text-xs text-[#4A433B]">
-                    <CheckCircle2 size={15} className="text-[#D4B98C] shrink-0 mt-0.5" />
-                    <span>{feat}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Action Row */}
-            <div className="pt-6 border-t border-[#E0D4C5] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <span className="text-xs text-[#7A6F64]">
-                * Las funciones de agenda dependen de la compatibilidad con el software de la clínica. No realiza diagnósticos médicos.
+              <span className="text-xs font-serif-editorial italic text-[#D4B98C] tracking-wide">
+                Solución especializada para clínicas dentales
               </span>
-              <a
-                href="https://dentaliaagency.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2.5 px-6 py-3.5 text-xs font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs whitespace-nowrap"
-              >
-                <span>Descubrir DentalIA Agency</span>
-                <ArrowUpRight size={14} className="text-[#EDE3D9] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
             </div>
-          </div>
 
-          {/* Right Column: Scalable Multi-Brand Architecture Card */}
-          <div className="lg:col-span-4 p-8 sm:p-10 rounded-3xl bg-[#EDE3D9] border border-[#D9CEBF] flex flex-col justify-between">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#F8F5F0] border border-[#DDD1C3] flex items-center justify-center text-[#292D32] mb-6">
-                <Layers size={22} strokeWidth={1.5} />
+            {/* Grid with Photography + Capabilities */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 items-center mb-8">
+              
+              {/* Photo of Modern Clinic Reception & Tech */}
+              <div className="md:col-span-5 rounded-2xl overflow-hidden border border-[#D9CEBF] aspect-[4/3] bg-[#EAE0D4]">
+                <img
+                  src="/src/assets/images/dentalia_agency_reception_1794314354082.jpg"
+                  alt="Espacio contemporáneo y luminoso de clínica dental con la identidad de DentalIA Agency"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-103"
+                  referrerPolicy="no-referrer"
+                />
               </div>
 
-              <h4 className="text-xl font-medium tracking-tight text-[#292D32] mb-3">
-                Arquitectura de Marcas Especializadas
-              </h4>
-
-              <p className="text-sm text-[#59524A] leading-relaxed mb-6">
-                El conocimiento acumulado por AMABLIA nos permite identificar las particularidades operativas de sectores concretos, adaptando las soluciones a su lenguaje habitual.
-              </p>
-
-              <div className="p-4 rounded-2xl bg-[#F8F5F0]/90 border border-[#DDD1C3] mb-6">
-                <span className="text-xs uppercase tracking-wider text-[#8C8074] font-medium block mb-1">
-                  Base Tecnológica Común
-                </span>
-                <p className="text-xs text-[#4A433B] leading-relaxed">
-                  Cada sector aprovecha nuestras soluciones para automatizar procesos respetando siempre la privacidad y el trato humano.
+              {/* Scope Description */}
+              <div className="md:col-span-7">
+                <h4 className="text-lg sm:text-xl font-medium text-[#292D32] mb-2.5">
+                  Inteligencia artificial y automatización para clínicas dentales.
+                </h4>
+                <p className="text-sm text-[#59524A] leading-relaxed mb-4">
+                  Agentes amables para WhatsApp y llamadas, atención continua de dudas y automatización de avisos diseñados para el ritmo diario de una clínica dental.
+                </p>
+                <p className="text-xs sm:text-sm text-[#7A6F64] leading-relaxed">
+                  Ayuda a aliviar el teléfono de recepción en horas punta, responde fuera de horario y coordina las solicitudes de los pacientes con el equipo de la clínica.
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl border border-dashed border-[#C5B7A6] text-xs text-[#6E6357] space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="font-medium text-[#292D32]">Nuevas soluciones sectoriales</span>
-                  <span className="font-serif-editorial italic text-[#D4B98C]">En estudio</span>
+            </div>
+
+            {/* Bullet Points with prudent medical wording */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-10 pt-6 border-t border-[#E0D4C5]">
+              {dentaliaFeatures.map((feat, idx) => (
+                <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#4A433B]">
+                  <CheckCircle2 size={16} className="text-[#D4B98C] shrink-0 mt-0.5" />
+                  <span>{feat}</span>
                 </div>
-                <p className="text-[11px] leading-relaxed text-[#73675B]">
-                  Estructura preparada para incorporar nuevas áreas de actividad según las necesidades de nuestros clientes.
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-6 border-t border-[#D9CEBF] text-xs text-[#7A6F64]">
-              ¿Tu empresa pertenece a otro sector? Estudiamos tus procesos particulares para diseñar una solución a tu medida.
+              ))}
             </div>
           </div>
 
+          {/* Action Row */}
+          <div className="pt-6 border-t border-[#E0D4C5] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <span className="text-xs text-[#7A6F64]">
+              * Las funciones de agenda dependen de la compatibilidad con el software de la clínica. No realiza diagnósticos médicos.
+            </span>
+            <a
+              href="https://dentaliaagency.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2.5 px-6 py-3.5 text-xs font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs whitespace-nowrap"
+            >
+              <span>Descubrir DentalIA Agency</span>
+              <ArrowUpRight size={14} className="text-[#EDE3D9] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          </div>
         </div>
 
       </div>

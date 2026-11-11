@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { Philosophy } from './components/Philosophy';
 import { Services } from './components/Services';
 import { PracticalExamples } from './components/PracticalExamples';
+import { BrandPhilosophy } from './components/BrandPhilosophy';
 import { Methodology } from './components/Methodology';
 import { Sectors } from './components/Sectors';
 import { WhyUs } from './components/WhyUs';
@@ -85,7 +86,10 @@ export default function App() {
         {/* Section 4: Ejemplos Prácticos (New Illustrative Section) */}
         <PracticalExamples onCtaClick={() => setIsScheduleModalOpen(true)} />
 
-        {/* Section 5: Cómo Trabajamos (Methodology) */}
+        {/* Section 5: La Filosofía AMABLIA (Brand Origin & Concept) */}
+        <BrandPhilosophy onCtaClick={() => scrollToSection('#metodologia')} />
+
+        {/* Section 6: Cómo Trabajamos (Methodology) */}
         <Methodology />
 
         {/* Section 6: Nuestras Soluciones por Sector (DentalIA & Architecture) */}

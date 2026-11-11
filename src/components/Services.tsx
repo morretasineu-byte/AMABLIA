@@ -13,7 +13,7 @@ export const servicesData: ServiceItem[] = [
     number: '01',
     title: 'Agentes de inteligencia artificial',
     shortDesc: 'Asistentes inteligentes de voz y texto que atienden dudas, conversan de manera natural y realizan tareas habituales automáticamente.',
-    fullDesc: 'Diseñamos asistentes digitales configurados con la información, el vocabulario y las pautas de atención de tu empresa. Ya sea por mensaje o por voz, tus clientes reciben respuestas claras de inmediato y tu equipo se libera de responder las mismas preguntas una y otra vez.',
+    fullDesc: 'Diseñamos agentes amables configurados con la información, el vocabulario y las pautas de atención de tu empresa. Escuchan, comprenden y ayudan: atienden consultas con cercanía y naturalidad las 24 horas, permitiendo que tu equipo se libere de responder siempre lo mismo.',
     channels: ['WhatsApp', 'Llamadas de voz', 'Chat web', 'Mensajería directa', 'Email'],
     useCases: [
       'Proporcionar información sobre horarios, tratamientos, precios orientativos y requisitos.',

@@ -22,9 +22,9 @@ export const WhyUs: React.FC = () => {
     {
       index: '03',
       icon: Clock3,
-      title: 'Más tiempo para lo importante',
-      summary: 'Automatizamos tareas para liberar recursos y mejorar la eficiencia.',
-      detail: 'Al delegar en la inteligencia artificial las respuestas rutinarias y las tareas administrativas repetitivas, tu equipo puede dedicar toda su atención al trato cercano con los clientes.',
+      title: 'Más tiempo para lo que realmente importa',
+      summary: 'Automatizamos tareas para liberar recursos y humanizar las experiencias de tus clientes.',
+      detail: 'Al delegar en sistemas inteligentes las respuestas rutinarias y las tareas administrativas repetitivas, tu equipo puede dedicar toda su atención al trato cercano, cálido y personal.',
       benefit: 'Qué obtienes: más tiempo libre para atender presencialmente y mejorar la calidad de servicio.',
     },
     {

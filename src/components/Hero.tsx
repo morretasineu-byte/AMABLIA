@@ -32,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
             <div className="flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase text-[#A39A91] mb-6 font-medium">
               <span>AMABLIA</span>
               <span className="text-[#D4B98C]">·</span>
-              <span>Inteligencia Artificial & Automatización</span>
+              <span>Inteligencia Artificial con Sensibilidad Humana</span>
             </div>
 
             {/* Main Headline with balanced luxury editorial touch */}
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <button
                 onClick={onDiscoverClick}
-                className="group inline-flex items-center justify-center gap-3 px-7 py-4 text-sm font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs hover:shadow-md active:scale-[0.99] whitespace-nowrap"
+                className="group inline-flex items-center justify-center gap-3 px-7 py-4 text-sm font-semibold tracking-wide text-[#F8F5F0] bg-[#292D32] hover:bg-[#3D434A] rounded-full transition-all duration-200 shadow-xs hover:shadow-md active:scale-[0.99] whitespace-nowrap cursor-pointer"
               >
                 <span>Descubre lo que podemos hacer por tu negocio</span>
                 <ArrowDown size={16} className="text-[#EDE3D9] transition-transform duration-200 group-hover:translate-y-0.5" />
@@ -57,9 +57,9 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
 
               <button
                 onClick={onAboutClick}
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-medium tracking-wide text-[#59524A] bg-transparent hover:bg-[#EDE3D9]/60 border border-[#DDD1C3] rounded-full transition-all duration-200 whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-medium tracking-wide text-[#59524A] bg-transparent hover:bg-[#EDE3D9]/60 border border-[#DDD1C3] rounded-full transition-all duration-200 whitespace-nowrap cursor-pointer"
               >
-                <span>Conoce nuestra propuesta</span>
+                <span>Conoce nuestra filosofía</span>
                 <ArrowUpRight size={15} className="text-[#A39A91]" />
               </button>
             </div>
@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
             <div className="pt-12 mt-10 border-t border-[#EDE3D9] flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-[#7A7167]">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D4B98C]" />
-                <span>Atención cercana</span>
+                <span>Agentes amables</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D9BFC0]" />
@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#A39A91]" />
-                <span>Acompañamiento continuo</span>
+                <span>Tecnología que entiende y conecta</span>
               </div>
             </div>
           </div>
@@ -95,24 +95,24 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
                     referrerPolicy="no-referrer"
                   />
                   {/* Subtle warm scrim for luxury depth */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/25 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#292D32]/25 via-transparent to-transparent pointer-events-none" />
 
                   {/* Tactile overlay caption */}
-                  <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-[#FAF7F2]/90 backdrop-blur-md border border-[#FAF7F2]/60 text-xs text-[#524B44] shadow-sm">
-                    <p className="font-serif-luxury italic text-sm text-[#1C1917] mb-0.5">
-                      "Tecnología con sensibilidad humana"
+                  <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-[#F8F5F0]/92 backdrop-blur-md border border-[#F8F5F0]/70 text-xs text-[#524B44] shadow-xs">
+                    <p className="font-serif-editorial italic text-sm text-[#292D32] mb-0.5">
+                      "La inteligencia puede ser amable"
                     </p>
-                    <p className="text-[11px] text-[#7C7166]">
-                      Sistemas que comprenden el contexto y potencian a las personas.
+                    <p className="text-[11px] text-[#7A7167]">
+                      Automatizamos tareas. Humanizamos experiencias.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Minimal floating geometric accent */}
-              <div className="absolute -bottom-4 -left-4 hidden sm:block p-3.5 bg-[#FAF7F2] border border-[#E2D6C7] rounded-2xl shadow-sm text-xs text-[#5C534B]">
-                <span className="font-serif-luxury italic text-[#C89B88] text-base mr-1.5">✦</span>
-                <span className="tracking-wide">Diseño e integración a medida</span>
+              <div className="absolute -bottom-4 -left-4 hidden sm:block p-3.5 bg-[#F8F5F0] border border-[#DDD1C3] rounded-2xl shadow-xs text-xs text-[#524B44]">
+                <span className="font-serif-editorial italic text-[#D4B98C] text-base mr-1.5">✦</span>
+                <span className="tracking-wide">Tecnología pensada para las personas</span>
               </div>
 
             </div>

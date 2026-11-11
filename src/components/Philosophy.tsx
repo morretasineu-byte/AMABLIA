@@ -31,7 +31,7 @@ export const Philosophy: React.FC = () => {
         <div className="flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-[#A39A91] font-medium mb-4">
           <span>01</span>
           <span className="text-[#D4B98C]">/</span>
-          <span>Nuestra Filosofía</span>
+          <span>Nuestro Enfoque</span>
         </div>
 
         {/* Section title and main narrative */}
