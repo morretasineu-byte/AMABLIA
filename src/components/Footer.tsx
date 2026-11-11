@@ -39,16 +39,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           {/* Brand Presentation & Sub-brand badge */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-xl font-medium tracking-[0.22em] text-[#F8F5F0]">
-                  AMABLIA
-                </span>
-                <span className="text-[11px] font-light tracking-[0.28em] text-[#A39A91]">
-                  AGENCY
-                </span>
+              <div className="mb-4">
+                <a href="#inicio" className="inline-block bg-[#F8F5F0] px-4 py-2.5 rounded-2xl border border-[#EDE3D9]/30 shadow-xs hover:opacity-95 transition-opacity">
+                  <img
+                    src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
+                    alt="AMABLIA AGENCY"
+                    className="h-11 sm:h-12 w-auto object-contain mix-blend-multiply"
+                  />
+                </a>
               </div>
 
-              {/* Explicit Mention as requested in Section 12 */}
+              {/* Sub-brand badge */}
               <div className="inline-block px-3 py-1 rounded-md bg-[#383E45] border border-[#484F57] text-[11px] font-medium text-[#D4B98C] mb-4">
                 An AMABLIA AGENCY brand
               </div>

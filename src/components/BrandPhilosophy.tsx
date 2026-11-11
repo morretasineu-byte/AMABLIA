@@ -97,12 +97,21 @@ export const BrandPhilosophy: React.FC<BrandPhilosophyProps> = ({ onCtaClick }) 
               </div>
 
               {/* Equals Result Result */}
-              <div className="mt-8 pt-6 border-t border-[#E0D4C5] flex items-baseline justify-between">
-                <div>
-                  <span className="text-[11px] uppercase tracking-wider text-[#A39A91] block">Identidad resultante</span>
-                  <span className="text-2xl sm:text-3xl font-medium tracking-[0.2em] text-[#292D32]">
-                    AMABL<span className="text-[#D4B98C]">IA</span>
-                  </span>
+              <div className="mt-8 pt-6 border-t border-[#E0D4C5] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-center gap-3.5">
+                  <div className="bg-[#F8F5F0] p-2 rounded-xl border border-[#DDD1C3] shadow-2xs">
+                    <img
+                      src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
+                      alt="Logo AMABLIA AGENCY"
+                      className="h-10 w-auto object-contain mix-blend-multiply"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-[11px] uppercase tracking-wider text-[#A39A91] block">Identidad resultante</span>
+                    <span className="text-xl sm:text-2xl font-medium tracking-[0.16em] text-[#292D32]">
+                      AMABL<span className="text-[#D4B98C]">IA</span>
+                    </span>
+                  </div>
                 </div>
                 <span className="text-xs font-serif-editorial italic text-[#8C8074]">
                   Tecnología con sensibilidad humana

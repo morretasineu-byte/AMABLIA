@@ -44,13 +44,17 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between gap-8">
-        {/* Zone 1: Single text element wordmark */}
+        {/* Zone 1: Official Brand Logo */}
         <a
           href="#inicio"
-          className="group flex items-baseline gap-1.5 text-[#292D32] tracking-[0.2em] text-lg font-medium whitespace-nowrap shrink-0 transition-opacity hover:opacity-85"
+          className="group flex items-center whitespace-nowrap shrink-0 transition-opacity hover:opacity-85 py-0.5"
+          aria-label="AMABLIA AGENCY"
         >
-          <span className="font-semibold tracking-[0.22em]">AMABLIA</span>
-          <span className="text-[11px] font-normal tracking-[0.28em] text-[#A39A91]">AGENCY</span>
+          <img
+            src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
+            alt="AMABLIA AGENCY"
+            className="h-11 sm:h-13 w-auto object-contain mix-blend-multiply"
+          />
         </a>
 
         {/* Zone 2: clean single-line text navigation links */}
