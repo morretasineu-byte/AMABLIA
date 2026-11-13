@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import heroAbstractImg from '../assets/images/hero_amablia_abstract_1794311286476.jpg';
 
 interface HeroProps {
   onDiscoverClick: () => void;
@@ -89,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiscoverClick, onAboutClick }) => 
               <div className="relative p-2.5 sm:p-3 bg-gradient-to-b from-[#F3ECE4] to-[#EAE0D4] rounded-3xl shadow-[0_12px_40px_rgba(28,25,23,0.06)] border border-[#E4D8CA]">
                 <div className="relative aspect-[4/5] sm:aspect-[16/18] overflow-hidden rounded-2xl bg-[#EFE8DF]">
                   <img
-                    src="/src/assets/images/hero_amablia_abstract_1794311286476.jpg"
+                    src={heroAbstractImg}
                     alt="Escultura abstracta que simboliza la conexión armónica entre tecnología, inteligencia y personas"
                     className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-103"
                     referrerPolicy="no-referrer"

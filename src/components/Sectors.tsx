@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import dentaliaReceptionImg from '../assets/images/dentalia_agency_reception_1794314354082.jpg';
 
 export const Sectors: React.FC = () => {
   const dentaliaFeatures = [
@@ -62,7 +63,7 @@ export const Sectors: React.FC = () => {
               {/* Photo of Modern Clinic Reception & Tech */}
               <div className="md:col-span-5 rounded-2xl overflow-hidden border border-[#D9CEBF] aspect-[4/3] bg-[#EAE0D4]">
                 <img
-                  src="/src/assets/images/dentalia_agency_reception_1794314354082.jpg"
+                  src={dentaliaReceptionImg}
                   alt="Espacio contemporáneo y luminoso de clínica dental con la identidad de DentalIA Agency"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-103"
                   referrerPolicy="no-referrer"

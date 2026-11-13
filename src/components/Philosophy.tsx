@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Cpu, Users } from 'lucide-react';
+import dentaliaReceptionImg from '../assets/images/dentalia_agency_reception_1794314354082.jpg';
 
 export const Philosophy: React.FC = () => {
   const pillars = [
@@ -76,7 +77,7 @@ export const Philosophy: React.FC = () => {
           {/* Real Work & Tech Environment Visual */}
           <div className="lg:col-span-5 rounded-3xl overflow-hidden border border-[#DDD1C3] bg-[#EAE0D4] relative shadow-xs min-h-[340px] lg:min-h-full">
             <img
-              src="/src/assets/images/dentalia_agency_reception_1794314354082.jpg"
+              src={dentaliaReceptionImg}
               alt="Recepción de DentalIA Agency con sistema de gestión digital de citas y atención al cliente"
               className="w-full h-full object-cover object-center"
               referrerPolicy="no-referrer"

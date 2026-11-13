@@ -1,5 +1,8 @@
 import React from 'react';
 import { MessageSquare, CalendarCheck, Network, Check, ArrowRight } from 'lucide-react';
+import whatsappAgentImg from '../assets/images/whatsapp_agent_mockup_1794312905417.jpg';
+import smartCalendarImg from '../assets/images/smart_calendar_booking_1794312904165.jpg';
+import connectedWorkflowsImg from '../assets/images/connected_workflows_apps_1794312905583.jpg';
 
 interface PracticalExamplesProps {
   onCtaClick: () => void;
@@ -13,7 +16,7 @@ export const PracticalExamples: React.FC<PracticalExamplesProps> = ({ onCtaClick
       title: 'Atención al cliente automatizada',
       subtitle: 'Un cliente escribe por WhatsApp fuera del horario comercial.',
       icon: MessageSquare,
-      image: '/src/assets/images/whatsapp_agent_mockup_1794312905417.jpg',
+      image: whatsappAgentImg,
       imageAlt: 'Mockup de conversación de WhatsApp con asistente virtual resolviendo dudas de citas',
       bullets: [
         'Responde inmediatamente a cualquier hora del día o de la noche.',
@@ -30,7 +33,7 @@ export const PracticalExamples: React.FC<PracticalExamplesProps> = ({ onCtaClick
       title: 'Gestión inteligente de citas',
       subtitle: 'Un cliente solicita reservar o cambiar una cita.',
       icon: CalendarCheck,
-      image: '/src/assets/images/smart_calendar_booking_1794312904165.jpg',
+      image: smartCalendarImg,
       imageAlt: 'Interfaz de agenda digital con citas y horarios sincronizados',
       bullets: [
         'Consulta la disponibilidad cuando existe una integración compatible con tu software.',
@@ -47,7 +50,7 @@ export const PracticalExamples: React.FC<PracticalExamplesProps> = ({ onCtaClick
       title: 'Automatización administrativa',
       subtitle: 'Una empresa recibe solicitudes de diferentes canales.',
       icon: Network,
-      image: '/src/assets/images/connected_workflows_apps_1794312905583.jpg',
+      image: connectedWorkflowsImg,
       imageAlt: 'Representación visual de aplicaciones conectadas en un flujo automatizado continuo',
       bullets: [
         'Recoge los datos introducidos en formularios, mensajes o correos.',
