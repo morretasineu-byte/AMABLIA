@@ -11,13 +11,11 @@ import { WhyUs } from './components/WhyUs';
 import { CtaBanner } from './components/CtaBanner';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { LegalModal } from './components/LegalModal';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { ConsultationCalendarModal } from './components/ConsultationCalendarModal';
-import { LegalDocType, ServiceItem } from './types';
+import { ServiceItem } from './types';
 
 export default function App() {
-  const [legalDoc, setLegalDoc] = useState<LegalDocType>(null);
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
 
@@ -103,16 +101,14 @@ export default function App() {
 
         {/* Section 9: Contacto */}
         <Contact
-          onOpenPrivacy={() => setLegalDoc('privacidad')}
           onOpenScheduleModal={() => setIsScheduleModalOpen(true)}
         />
       </main>
 
       {/* Footer */}
-      <Footer onOpenLegal={(type) => setLegalDoc(type)} />
+      <Footer />
 
       {/* Interactive Modals */}
-      <LegalModal type={legalDoc} onClose={() => setLegalDoc(null)} />
 
       <ServiceDetailModal
         service={selectedService}

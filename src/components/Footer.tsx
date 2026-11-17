@@ -1,12 +1,9 @@
 import React from 'react';
 import { ArrowUpRight, ArrowUp } from 'lucide-react';
-import { LegalDocType } from '../types';
 
-interface FooterProps {
-  onOpenLegal: (type: LegalDocType) => void;
-}
+const LEGAL_URL = 'https://amablialegal.vercel.app';
 
-export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
+export const Footer: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -149,26 +146,32 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
 
           {/* Legal Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-[#A39A91]">
-            <button
-              onClick={() => onOpenLegal('aviso-legal')}
-              className="hover:text-[#F8F5F0] transition-colors cursor-pointer"
+            <a
+              href={LEGAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8F5F0] transition-colors"
             >
               Aviso Legal
-            </button>
+            </a>
             <span className="text-[#484F57]">·</span>
-            <button
-              onClick={() => onOpenLegal('privacidad')}
-              className="hover:text-[#F8F5F0] transition-colors cursor-pointer"
+            <a
+              href={LEGAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8F5F0] transition-colors"
             >
               Política de Privacidad
-            </button>
+            </a>
             <span className="text-[#484F57]">·</span>
-            <button
-              onClick={() => onOpenLegal('cookies')}
-              className="hover:text-[#F8F5F0] transition-colors cursor-pointer"
+            <a
+              href={LEGAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8F5F0] transition-colors"
             >
               Política de Cookies
-            </button>
+            </a>
           </div>
 
         </div>

@@ -3,11 +3,10 @@ import { Mail, Check, Send, AlertCircle, MapPin, Calendar } from 'lucide-react';
 import { ContactFormData } from '../types';
 
 interface ContactProps {
-  onOpenPrivacy: () => void;
   onOpenScheduleModal?: () => void;
 }
 
-export const Contact: React.FC<ContactProps> = ({ onOpenPrivacy, onOpenScheduleModal }) => {
+export const Contact: React.FC<ContactProps> = ({ onOpenScheduleModal }) => {
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     company: '',
@@ -348,13 +347,14 @@ export const Contact: React.FC<ContactProps> = ({ onOpenPrivacy, onOpenScheduleM
                     />
                     <label htmlFor="privacy" className="text-xs text-[#59524A] leading-relaxed cursor-pointer">
                       He leído y acepto la{' '}
-                      <button
-                        type="button"
-                        onClick={onOpenPrivacy}
+                      <a
+                        href="https://amablialegal.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-[#292D32] underline hover:text-[#D4B98C] font-semibold"
                       >
                         política de privacidad
-                      </button>{' '}
+                      </a>{' '}
                       y el tratamiento de mis datos para responder a esta solicitud de consultoría.
                     </label>
                   </div>
