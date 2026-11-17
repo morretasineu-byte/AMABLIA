@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, ArrowUp } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 const LEGAL_URL = 'https://amablialegal.vercel.app';
 
@@ -36,13 +37,13 @@ export const Footer: React.FC = () => {
           {/* Brand Presentation & Sub-brand badge */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="mb-4">
-                <a href="#inicio" className="inline-block bg-[#F8F5F0] px-4 py-2.5 rounded-2xl border border-[#EDE3D9]/30 shadow-xs hover:opacity-95 transition-opacity">
-                  <img
-                    src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
-                    alt="AMABLIA AGENCY"
-                    className="h-11 sm:h-12 w-auto object-contain mix-blend-multiply"
-                  />
+              <div className="mb-5">
+                <a
+                  href="#inicio"
+                  className="inline-block transition-opacity hover:opacity-90"
+                  aria-label="AMABLIA AGENCY"
+                >
+                  <BrandLogo size="md" tone="dark" />
                 </a>
               </div>
 

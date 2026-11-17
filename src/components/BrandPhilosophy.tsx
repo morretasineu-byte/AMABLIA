@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 interface BrandPhilosophyProps {
   onCtaClick?: () => void;
@@ -99,12 +100,8 @@ export const BrandPhilosophy: React.FC<BrandPhilosophyProps> = ({ onCtaClick }) 
               {/* Equals Result Result */}
               <div className="mt-8 pt-6 border-t border-[#E0D4C5] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3.5">
-                  <div className="bg-[#F8F5F0] p-2 rounded-xl border border-[#DDD1C3] shadow-2xs">
-                    <img
-                      src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
-                      alt="Logo AMABLIA AGENCY"
-                      className="h-10 w-auto object-contain mix-blend-multiply"
-                    />
+                  <div className="bg-[#F8F5F0] px-3 py-2 rounded-xl border border-[#DDD1C3] shadow-2xs">
+                    <BrandLogo size="sm" tone="light" />
                   </div>
                   <div>
                     <span className="text-[11px] uppercase tracking-wider text-[#A39A91] block">Identidad resultante</span>

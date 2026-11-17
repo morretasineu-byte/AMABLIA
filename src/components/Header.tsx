@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 interface HeaderProps {
   onOpenConsultation: () => void;
@@ -50,11 +51,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
           className="group flex items-center whitespace-nowrap shrink-0 transition-opacity hover:opacity-85 py-0.5"
           aria-label="AMABLIA AGENCY"
         >
-          <img
-            src="/assets/aistudio/Logotip_elegant_d_Amablia_Agency_705166d9.png"
-            alt="AMABLIA AGENCY"
-            className="h-11 sm:h-13 w-auto object-contain mix-blend-multiply"
-          />
+          <BrandLogo size="header" tone="light" />
         </a>
 
         {/* Zone 2: clean single-line text navigation links */}
