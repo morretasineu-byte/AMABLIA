@@ -65,7 +65,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
               AMABLIA AGENCY no garantiza la ausencia de interrupciones o errores en el acceso a la web, aunque adoptará todas las medidas técnicas necesarias para evitarlo y subsanarlo con la mayor diligencia posible.
             </p>
             <p className="text-[11px] text-[#8A7D71] pt-4 border-t border-[#EAE0D4]">
-              Contacto para cuestiones legales: hola@amablia.agency
+              Contacto para cuestiones legales: amabliaagency@gmail.com
             </p>
           </div>
         )}
@@ -82,7 +82,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
               1. Responsable del tratamiento
             </h4>
             <p>
-              <strong>AMABLIA AGENCY</strong> · Correo de contacto y ejercicio de derechos: <em>hola@amablia.agency</em>.
+              <strong>AMABLIA AGENCY</strong> · Correo de contacto y ejercicio de derechos: <em>amabliaagency@gmail.com</em>.
             </p>
             <h4 className="font-semibold text-[#1C1917] text-sm pt-2">
               2. Finalidad del tratamiento
@@ -105,7 +105,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
               4. Tus derechos
             </h4>
             <p>
-              Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición enviando un correo electrónico a <em>hola@amablia.agency</em> acompañado de copia de tu documento identificativo.
+              Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición enviando un correo electrónico a <em>amabliaagency@gmail.com</em> acompañado de copia de tu documento identificativo.
             </p>
           </div>
         )}

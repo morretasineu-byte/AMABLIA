@@ -153,14 +153,11 @@ export const Contact: React.FC<ContactProps> = ({ onOpenScheduleModal }) => {
                     Correo electrónico
                   </span>
                   <a
-                    href="mailto:hola@amablia.agency"
+                    href="mailto:amabliaagency@gmail.com"
                     className="text-sm font-semibold text-[#292D32] hover:text-[#D4B98C] transition-colors"
                   >
-                    hola@amablia.agency
+                    amabliaagency@gmail.com
                   </a>
-                  <span className="text-[11px] text-[#A39A91] block mt-0.5">
-                    (Dirección corporativa provisional de contacto)
-                  </span>
                 </div>
               </div>
 
